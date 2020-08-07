@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_view_header_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="NUMBER CALCULATION"
+
+        />
+
+    <LinearLayout
+        android:layout_below="@id/text_view_header_calculator"
+        android:id="@+id/first_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_first_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Number 1"
+
+            />
+
+        <EditText
+            android:id="@+id/editText_first_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:hint="Enter first number"/>
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/first_number_layout"
+        android:layout_marginTop="60dp"
+        android:id="@+id/second_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_second_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Number 2"
+
+            />
+
+        <EditText
+            android:id="@+id/editText_second_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:hint="Enter second number"/>
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/second_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Result"
+
+            />
+
+        <EditText
+            android:id="@+id/editText_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="130dp"
+            android:hint="Result number"/>
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"/>
+
+        <Button
+            android:id="@+id/button_sub"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="SUB"/>
+
+        <Button
+            android:id="@+id/button_mul"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MUL"/>
+
+        <Button
+            android:id="@+id/button_div"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIV"/>
+    </LinearLayout>
+
+    <!--<fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />-->
+</RelativeLayout>
