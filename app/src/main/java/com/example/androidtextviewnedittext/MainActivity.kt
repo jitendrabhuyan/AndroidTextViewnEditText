@@ -30,26 +30,44 @@ class MainActivity : AppCompatActivity() {
         val buttonAdd = findViewById<Button>(R.id.button_add)
         buttonAdd.setOnClickListener(){
 
-            val result : Int = number1Value.toString().toInt()
+            val number1 : Int = number1Value.toString().toInt()
+            val number2 : Int = number2Value.toString().toInt()
 
-            resultEditor.setText(result)
+            val result : Int = number1 + number2
+
+            resultEditor.setText(""+result)
 
 
         }
 
         val buttonSub = findViewById<Button>(R.id.button_sub)
         buttonSub.setOnClickListener(){
+            val number1 : Int = number1Value.toString().toInt()
+            val number2 : Int = number2Value.toString().toInt()
 
+            val result : Int = number1 - number2
+
+            resultEditor.setText(""+result)
         }
 
         val buttonMul = findViewById<Button>(R.id.button_mul)
         buttonMul.setOnClickListener(){
+            val number1 : Int = number1Value.toString().toInt()
+            val number2 : Int = number2Value.toString().toInt()
 
+            val result : Int = number1 * number2
+
+            resultEditor.setText(""+result)
         }
 
         val buttonDiv = findViewById<Button>(R.id.button_div)
         buttonDiv.setOnClickListener(){
+            val number1 : Int = number1Value.toString().toInt()
+            val number2 : Int = number2Value.toString().toInt()
 
+            val result : Int = number1 / number2
+
+            resultEditor.setText(""+result)
         }
 
 
